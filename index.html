@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/output.css">
+    <link rel="shortcut icon" href="/assets/apexcomfundo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/334b29d687.js" crossorigin="anonymous"></script>
+    <title>Apex Barber</title>
+</head>
+<body class= "bg-zinc-800  w-full text-amber-100 relative">
+
+  <div class="texture"></div>
+  
+
+  <header class="flex justify-between items-center py-2 px-6 sticky top-0 z-100 w-full backdrop-blur-lg backdrop-brightness-90  mx-auto w-full max-w-[1600px]">
+
+    <div class="max-w-44"><img src="/assets/apexbarber.png" alt="" class="w-full hover:scale-110 duration-300 ease-in-out cursor-pointer"></div>
+
+      <button class="btnMenu hover:text-madeira duration-300" id="btnMenu"><i class="fa-solid fa-bars"></i></button>
+
+      <nav class="hidden md:block">
+        <ul class="flex gap-6 items-center">
+          <li><a href="#home" class= "linkMenuBarber lineUp">Home</a></li>
+          <li><a href="#servicos" class= "linkMenuBarber lineUp">Serviços e Planos</span></a></li>
+          <li><a href="#equipe" class= "linkMenuBarber lineUp">Equipe</span></a></li>
+          <li><a href="#galeria" class= "linkMenuBarber lineUp">Galeria</span></a></li>
+          <li><a href="#endereco" class= "linkMenuBarber lineUp">Endereço</span></a></li>
+          <li><a href="#" class= "btnBarber">Agendar</a></li>
+        </ul>
+      </nav>
+
+  </header>
+
+   <div class="overlay" id="#overlay"></div>
+
+      <!-- MENU MOBILE -->
+
+       <nav class="fixed duration-400 w-1/2  h-screen top-0  right-0  bottom-0 translate-x-full z-110  bg-zinc-900/60 backdrop-blur-md" id="menu-mobile">
+        <button class="text-3xl fixed top-20 right-7 cursor-pointer font-bold  hover:text-madeira duration-300 " id="btn-close">X</button>
+        <ul class="flex min-h-screen flex-col justify-center items-center gap-6">
+          <li><a href="#home" class= "linkMenuBarber">Home</a></li>
+          <li><a href="#servicos" class= "linkMenuBarber">Serviços e Planos</a></li>
+          <li><a href="#equipe" class= "linkMenuBarber">Equipe</a></li>
+          <li><a href="#galeria" class= "linkMenuBarber lineUp">Galeria</span></a></li>
+          <li><a href="#endereco" class= "linkMenuBarber">Endereço</a></li>
+          <li><a href="#" class= "btnBarber">Agendar</a></li>
+        </ul>
+      </nav>
+
+  <main class="mt-2 xl:mt-16">
+    <section class="flex gap-16 lg:flex-col xl:flex-row section  mx-auto w-full max-w-[1600px]" id="home">
+      <article class="flex flex-col flex-1 gap-4 max-w-2xl px-4">
+        <p class="eyerBrow animate-fadeUp delay_100">Tradição, Técnica e Estilo</p>
+        <h1 class="font-['Cinzel'] text-6xl lg:text-7xl xl:text-8xl animate-fadeUp delay_300">Tesoura <span class="destaqueSpan animate-brilhar delay_1000 inline-block">firme</span>, Navalha <span class="destaqueSpan animate-brilhar delay_1300 inline-block">afiada</span>, Conversa <span class="destaqueSpan animate-brilhar delay_1700 inline-block">boa</span>.</h1>
+        <h2 class="font-['Manrope'] text-xl md:text-2xl animate-fadeUp delay_500">Cortes modernos, barba impecável e atendimento personalizado em um ambiente pensado para quem valoriza estilo, confiança e atenção aos detalhes.</h2>
+        <div class="flex gap-4 animate-fadeUp delay_700">
+          <a href="#" class="btnBarber">Agendar Horário</a>
+          <a href="#" class="border-2 max-w-2xs p-4 text-center font-medium hover:scale-110 duration-300">Conheça nossos serviços</a>
+        </div>
+        <p class="animate-fadeUp delay_900">R. das Palmeiras, 214 — seg a sáb, 9h–19h</p>
+      </article>
+
+      <article class="flex-1 hidden px-4 lg:block">
+        <div class="overflow-hidden border-16 border-double border-madeira max-h-[650px]"><img src="/assets/barbearia.jpg" alt="" class=" w-full h-full object-cover lg:aspect-video xl:aspect-square   hover:scale-125 duration-500 cursor-pointer opacity-70 contrast-125"></div>
+      </article>
+    </section>
+
+    <section class="section-padrao reveal" id="sobre">
+      <h3 class="subtitle_barbearia">Seu estilo no próximo nível</h3>
+     
+      <p class="text-xl leading-8 mt-8">Na Apex Barber, você encontra muito mais do que um simples corte. Oferecemos serviços pensados para valorizar o seu estilo e planos exclusivos para quem gosta de manter o visual sempre em dia. Escolha a opção que mais combina com você e aproveite uma experiência completa, com qualidade, praticidade e aquele cuidado especial em cada visita.
+      Conheça nossos serviços, descubra nossos planos e encontre a melhor opção para o seu estilo.</p>
+      <p class="text-xl leading-8">Cada instrumento tem seu lugar, cada corte tem seu tempo. Trabalhamos com navalha de aço carbono, afiada à mão, e um jeito de atender que não cabe em aplicativo — mas o agendamento sim.</p>
+      <p class="text-xl leading-8">Venha conhecer a Apex Barber e descubra uma experiência feita para você. Escolha seu estilo, agende seu horário e deixe o resto com a gente. Estamos prontos para elevar o seu visual.</p>
+    </section>
+
+    <section id="servicos" class="section-padrao section reveal">
+      <h3 class="subtitle_barbearia">Serviços</h3>
+      <article class="flex flex-col gap-6 mt-8 w-full max-w-7xl justify-center mx-auto">
+          <div class="flex gap-2 items-baseline">
+            <p class="servicos_barbeiro">Cabelo</p> <span class="inline-block w-full  p-0.5 bg-linear-to-r to-zinc-800 via-madeira from-zinc-800 rounded-full"></span> <p class="servicos_barbeiro">R$50,00</p>
+          </div>
+          <div class="flex gap-2 items-baseline">
+            <p class="servicos_barbeiro">Barboterapia</p> <span class="inline-block w-full  p-0.5 bg-linear-to-r to-zinc-800 via-madeira from-zinc-800 rounded-full"></span> <p class="servicos_barbeiro">R$45,00</p>
+          </div>
+          <div class="flex gap-2 items-baseline">
+            <p class="servicos_barbeiro">Cabelo e Barba</p> <span class="inline-block w-full  p-0.5 bg-linear-to-r to-zinc-800 via-madeira from-zinc-800 rounded-full"></span> <p class="servicos_barbeiro">R$90,00</p>
+          </div>
+          <div class="flex gap-2 items-baseline">
+            <p class="servicos_barbeiro">Sobrancelha</p> <span class="inline-block w-full  p-0.5 bg-linear-to-r to-zinc-800 via-madeira from-zinc-800 rounded-full"></span> <p class="servicos_barbeiro">R$20,00</p>
+          </div>
+          <div class="flex gap-2 items-baseline">
+            <p class="servicos_barbeiro">Platinado</p> <span class="inline-block w-full  p-0.5 bg-linear-to-r to-zinc-800 via-madeira from-zinc-800 rounded-full"></span> <p class="servicos_barbeiro">R$45,00</p>
+          </div>
+          <div class="flex gap-2 items-baseline">
+            <p class="servicos_barbeiro">Pezinho</p> <span class="inline-block w-full  p-0.5 bg-linear-to-r to-zinc-800 via-madeira from-zinc-800 rounded-full"></span> <p class="servicos_barbeiro">R$15,00</p>
+          </div>
+          <div class="flex gap-2 items-baseline">
+            <p class="servicos_barbeiro">Combo completo</p> <span class="inline-block w-full  p-0.5 bg-linear-to-r to-zinc-800 via-madeira from-zinc-800 rounded-full"></span> <p class="servicos_barbeiro">R$105,00</p>
+          </div>
+      </article>
+
+      <article class="mx-auto my-10 flex flex-col gap-4">
+        <p class="font-bold text-xl text-shadow-md text-shadow-black">Entre em contato para ver todos os serviços</p>
+        <a href="#" class="btnBarber mx-auto">Agendar agora</a>
+      </article>
+
+       <h3 class="subtitle_barbearia">Planos</h3>
+      <article class="mx-auto">
+
+         <div class="grid gap-6 mt-8 items-center justify-center w-full md:grid-cols-2 xl:grid-cols-4 ">
+        <!-- 1º PLANO -->
+          <div class="rounded-md  bg-amber-100 text-madeira font-medium hover:shadow-2xl hover:shadow-madeira duration-300 hover:scale-105 cursor-pointer min-h-96">
+
+            <h4 class="titulo_planos">Plano Basic</h4>
+            <div class="px-4 py-8">
+              <p class="mb-6"><span class="text-2xl font-bold">R$80,00</span>/mês</p>
+              <ul class="flex flex-col justify-center gap-2">
+                <li class="item_planos"> <span class="positivo"></span> 3 cortes por mês </li>
+                <li class="item_planos"> <span class="positivo"></span> 5% OFF nos demais serviços</li>
+                <li class="item_planos"><span class="font-bold text-2xl">X</span>Barba Ilimitado</li>
+                <li class="item_planos"><span class="font-bold text-2xl">X</span>Sobrancelha ilimitado</li>
+                <li class="item_planos"> <span class="font-bold text-2xl">X</span> 10% OFF nos nossos produtos</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 2º PLANO -->
+           <div class="rounded-md  bg-amber-100 text-madeira font-medium hover:shadow-2xl hover:shadow-madeira duration-300 hover:scale-105 cursor-pointer min-h-96">
+            <h4 class="titulo_planos">Plano Plus</h4>
+            <div class="px-4 py-8">
+              <p class="mb-6"><span class="text-2xl font-bold">R$130,00</span>/mês</p>
+              <ul class="flex flex-col justify-center gap-2">
+                <li class="item_planos"> <span class="positivo"></span> 5 cortes por mês </li>
+                <li class="item_planos"> <span class="positivo"></span> 10% OFF nos demais serviços</li>
+                <li class="item_planos"><span class="positivo"></span>5 barbas por mês</li>
+                <li class="item_planos"><span class="font-bold text-2xl">X</span>Sobrancelha ilimitado</li>
+                <li class="item_planos"> <span class="font-bold text-2xl">X</span> 10% OFF nos nossos produtos</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 3º PLANO -->
+           <div class="rounded-md  bg-amber-100 text-madeira font-medium hover:shadow-2xl hover:shadow-madeira duration-300 hover:scale-105 cursor-pointer min-h-96">
+            <h4 class="titulo_planos">Plano Premium</h4>
+            <div class="px-4 py-8">
+              <p class="mb-6"><span class="text-2xl font-bold">R$170,00</span>/mês</p>
+              <ul class="flex flex-col justify-center gap-2">
+                <li class="item_planos"> <span class="positivo"></span> Cortes Ilimitados </li>
+                <li class="item_planos"> <span class="positivo"></span> 10% OFF nos demais serviços</li>
+                <li class="item_planos"><span class="positivo"></span>Barba Ilimitado</li>
+                <li class="item_planos"><span class="font-bold text-2xl">X</span>Sobrancelha ilimitado</li>
+                <li class="item_planos"> <span class="font-bold text-2xl">X</span> 10% OFF nos nossos produtos</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 4º PLANO -->
+           <div class="rounded-md  bg-amber-100 text-madeira font-medium hover:shadow-2xl hover:shadow-madeira duration-300 hover:scale-105 cursor-pointer min-h-96">
+            <h4 class="titulo_planos">Plano Gold</h4>
+            <div class="px-4 py-8">
+              <p class="mb-6"><span class="text-2xl font-bold">R$210,00</span>/mês</p>
+              <ul class="flex flex-col justify-center gap-2">
+                <li class="item_planos"> <span class="positivo"></span> Cortes Ilimitados </li>
+                <li class="item_planos"> <span class="positivo"></span> 10% OFF nos demais serviços</li>
+                <li class="item_planos"><span class="positivo"></span>Barba Ilimitado</li>
+                <li class="item_planos"><span class="positivo"></span>Sobrancelha ilimitado</li>
+                <li class="item_planos"> <span class="positivo"></span> 10% OFF nos nossos produtos</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </article>
+    </section>
+
+    <section id="equipe" class="section-padrao section reveal">
+       <h3 class="subtitle_barbearia">Quem segura a navalha</h3>
+
+       <article class="mt-6 grid gap-6 lg:grid-cols-3">
+        <div class="border-16 border-double border-madeira overflow-hidden max-h-[550px]">
+          <img src="assets/barbeiro1.jpg" alt="" class="w-full object-cover aspect-square h-full cursor-pointer">
+        </div>
+         <div class="border-16 border-double border-madeira overflow-hidden max-h-[550px]">
+          <img src="assets/barbeiro2.jpg" alt="" class="w-full object-cover aspect-square h-full cursor-pointer">
+        </div>
+         <div class="border-16 border-double border-madeira overflow-hidden max-h-[550px]">
+          <img src="assets/barbeiro3.jpg" alt="" class="w-full object-cover aspect-square h-full cursor-pointer">
+        </div>
+
+       </article>
+    </section>
+
+    <section id="galeria" class="section-padrao section reveal">
+      <h3 class="subtitle_barbearia">Um pouco do nosso trabalho</h3>
+
+      <article class="relative h-[680px] max-w-7xl w-full mt-8 hidden xl:block">
+          <img src="/assets/corte1.jpg" alt="corte de cabelo masculino"  class="absolute top-10 left-10 w-md -rotate-12 transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-20 hover:shadow-2xl brightness-50 hover:brightness-100">
+          <img src="/assets/corte2.jpg" alt="corte de cabelo masculino"  class="absolute top-20 left-80 w-sm rotate-6 transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-20 hover:shadow-2xl brightness-50 hover:brightness-100">
+          <img src="/assets/corte3.jpg" alt="corte de cabelo masculino"  class="absolute top-0 right-80 w-72 -rotate-12 transition-all duration-500 hover:scale-125 hover:rotate-0 hover:z-20 hover:shadow-2xl brightness-50 hover:brightness-100">
+           <img src="/assets/corte4.jpg" alt="corte de cabelo masculino"  class="absolute top-90 right-90 w-64 rotate-45 transition-all duration-500 hover:scale-125 hover:rotate-0 hover:z-20 hover:shadow-2xl brightness-50 hover:brightness-100">
+          <img src="/assets/corte5.jpg" alt="corte de cabelo masculino"  class="absolute top-10 -right-10 w-sm rotate-3 transition-all duration-500 hover:scale-105 hover:rotate-0 hover:z-20 hover:shadow-2xl brightness-50 hover:brightness-100">
+          <img src="/assets/corte6.jpg" alt="corte de cabelo masculino"  class="absolute -top-20 -right-10 w-sm -rotate-6 transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-20 hover:shadow-2xl brightness-50 hover:brightness-100">
+           <img src="/assets/corte8.jpg" alt="corte de cabelo masculino"  class="absolute -bottom-30 right-30 w-56 -rotate-12 transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-20 hover:shadow-2xl brightness-50 hover:brightness-100">
+      </article>
+
+      <article class="xl:hidden mt-8">
+
+        <div class="grid gap-6 lg:grid-cols-2">
+          <img src="/assets/corte3.jpg" alt="" class="object-cover aspect-square border-2 border-madeira">
+           <img src="/assets/corte2.jpg" alt="" class="object-cover aspect-square border-2 border-madeira">
+          <img src="/assets/corte3.jpg" alt="" class="object-cover aspect-square border-2 border-madeira">
+          <img src="/assets/corte4.jpg" alt="" class="object-cover aspect-square border-2 border-madeira">
+          <img src="/assets/corte5.jpg" alt="" class="object-cover aspect-square border-2 border-madeira">
+          <img src="/assets/corte6.jpg" alt="" class="object-cover aspect-square border-2 border-madeira">
+          <img src="/assets/corte8.jpg" alt="" class="object-cover aspect-square border-2 border-madeira">
+           <img src="/assets/corte7.jpg" alt="" class="object-cover aspect-square border-2 border-madeira">
+        </div>
+
+      </article>
+    </section>
+
+
+
+    <section id="feedbacks" class="section-padrao reveal">
+       <h3 class="subtitle_barbearia">Quem corta com a gente, não muda</h3>
+       <article class="grid gap-x-5 gap-y-0 lg:grid-cols-3">
+        <div class="bg-zinc-900 px-4 py-6 mt-8 rounded-lg border-2 border-madeira flex flex-col gap-4 hover:-translate-y-4 duration-300 hover:scale-105 cursor-pointer">
+            <p class="estrelas">⭐⭐⭐⭐⭐</p>
+          <p class="font-['Manrope'] flex-1 text-lg opacity-70 italic"> "Troquei de bairro e continuo vindo aqui. Não confio meu cabelo em qualquer lugar."</p>
+          <p class="font-['Manrope'] text-lg opacity-70 italic mt-4  text-madeira text-shadow-md text-shadow-black"> - Marcelo Martins</p>
+        </div>
+         <div class="bg-zinc-900 px-4 py-6 mt-8 rounded-lg border-2 border-madeira flex flex-col gap-4 hover:-translate-y-4 duration-300 hover:scale-105 cursor-pointer">
+            <p class="estrelas">⭐⭐⭐⭐⭐</p>
+          <p class="font-['Manrope'] flex-1 text-lg opacity-70 italic"> "A barba feita na navalha é outro nível. Não dá pra voltar pra máquina depois disso."</p>
+          <p class="font-['Manrope'] text-lg opacity-70 italic mt-4  text-madeira text-shadow-md text-shadow-black"> - Igor Andrade</p>
+        </div>
+         <div class="bg-zinc-900 px-4 py-6 mt-8 rounded-lg border-2 border-madeira flex flex-col gap-4 hover:-translate-y-4 duration-300 hover:scale-105 cursor-pointer">
+          <p class="estrelas">⭐⭐⭐⭐⭐</p>
+          <p class="font-['Manrope'] flex-1 text-lg opacity-70 italic"> "Marquei pelo link, cheguei e fui direto pra cadeira. Sem enrolação, resultado sempre igual."</p>
+          <p class="font-['Manrope'] text-lg opacity-70 italic text-madeira text-shadow-md text-shadow-black"> - Lucas Silva </p>
+        </div>
+
+       </article>
+    </section>
+
+    <section class="section-padrao section reveal" id="endereco">
+       <h3 class="subtitle_barbearia">Onde nos encontrar</h3>
+       <article class="flex flex-col xl:flex-row gap-8 items-center justify-center">
+         <article class="mt-8 w-full flex-1">
+          <div class="bg-zinc-900 border-12 border-madeira py-4 px-6 rounded-md border-double flex flex-col gap-6">
+            <h4 class="font-bold uppercase text-xl mb-6 text-center text-madeira text-shadow-black text-shadow-md">Horário de funcionamento</h4>
+            <div class="flex justify-between border-b-2 border-dotted">
+              <p class="text-lg font-medium text-shadow-black text-shadow-sm">Segunda</p>
+              <p class="text-lg font-medium text-shadow-black text-shadow-sm">09h - 18h</p>
+            </div>
+            <div class="flex justify-between border-b-2 border-dotted">
+              <p class="text-lg font-medium text-shadow-black text-shadow-sm">Terça</p>
+              <p class="text-lg font-medium text-shadow-black text-shadow-sm">09h - 20h</p>
+            </div>
+            <div class="flex justify-between border-b-2 border-dotted">
+              <p class="text-lg font-medium text-shadow-black text-shadow-sm">Quarta</p>
+              <p class="text-lg font-medium text-shadow-black text-shadow-sm">09h - 18h</p>
+            </div>
+            <div class="flex justify-between border-b-2 border-dotted">
+              <p class="text-lg font-medium text-shadow-black text-shadow-sm">Quinta</p>
+              <p class="text-lg font-medium text-shadow-black text-shadow-sm">09h - 18h</p>
+            </div>
+            <div class="flex justify-between border-b-2 border-dotted">
+              <p class="text-lg font-medium text-shadow-black text-shadow-sm">Sexta</p>
+              <p class="text-lg font-medium text-shadow-black text-shadow-sm">09h - 22h</p>
+            </div>
+            <div class="flex justify-between border-b-2 border-dotted">
+              <p class="text-lg font-medium text-shadow-black text-shadow-sm">Sábado</p>
+              <p class="text-lg font-medium text-shadow-black text-shadow-sm">09h - 22h</p>
+            </div>
+            <div class="flex justify-between border-b-2 border-dotted">
+              <p class="text-lg font-medium text-shadow-black text-shadow-sm">Domingo</p>
+              <p class="text-lg font-medium text-shadow-black text-shadow-sm">09h - 13h</p>
+            </div>
+          </div>
+         </article>
+         <article class="border-3 border-madeira flex-1">
+          <img src="/assets/ChatGPT Image 25 de jul. de 2026, 13_03_36.png" alt="" class="object-cover aspect-video">
+         </article>
+       </article>
+    </section>
+
+    <footer class="bg-zinc-950 flex flex-col gap-2 justify-center items-center xl:justify-around xl:flex-row">
+      <img src="/assets/apexbarber.png" alt="" class="w-28">
+      <ul class="flex gap-2">
+        <li><a href="#" class="hover:text-madeira duration-300">Whatsapp</a></li>
+        <li><a href="#" class="hover:text-madeira duration-300">Instagram</a></li>
+        <li><a href="#equipe" class="hover:text-madeira duration-300">Equipe</a></li>
+        <li><a href="#servicos" class="hover:text-madeira duration-300">Serviços</a></li>
+      </ul>
+      <p>&copy Apex Barber. Todos os direitos reservados</p>
+    </footer>
+  </main>
+
+  <a href="#" class="btnWhats"><i class="fa-brands fa-whatsapp"></i></a>
+  
+<script src="barbearia.js"></script> 
+</body>
+</html>

@@ -1,0 +1,60 @@
+ /* AQUI COMEÇA A BARBEARIA */
+@layer components{
+    .texture{
+        @apply fixed inset-0 bg-cover opacity-25 mix-blend-overlay  pointer-events-none  bg-[url(/portfolio/barbearia/assets/cimentoqueimado.jpg)]
+    }
+    .linkMenuBarber{
+        @apply   hover:text-madeira duration-300 font-medium text-xl
+    }
+    .lineUp{
+        @apply relative  before:w-full before:h-0.5 before:absolute before:-bottom-0.5 before:left-0 before:bg-madeira before:opacity-0 hover:before:opacity-100 before:duration-300 before:origin-left ease-in before:scale-0 hover:before:scale-100
+    }
+    .btnBarber{
+        @apply font-bold py-4 px-10 rounded shadow-xs shadow-black/70 cursor-pointer duration-300 hover:scale-105 ease-in-out hover:translate-x-1 hover:-translate-y-1 bg-madeira uppercase block max-w-2xs text-center
+    }
+    .eyerBrow{
+        @apply text-madeira text-lg font-medium tracking-widest font-['Oswald']
+    }
+    .destaqueSpan{
+        @apply text-madeira uppercase text-5xl md:text-7xl text-shadow-sm text-shadow-black
+    }
+    .subtitle_barbearia{
+        @apply text-4xl lg:text-5xl font-['Cinzel'] tracking-wider text-madeira text-shadow-sm text-shadow-black font-medium mt-8
+    }
+    .servicos_barbeiro{
+        @apply text-2xl tracking-wide font-['Manrope']
+    }
+    .positivo{
+        @apply after:w-1 after:bg-madeira after:h-5 after:inline-block after:rotate-[45deg] before:w-1 before:bg-madeira before:h-2.5 before:inline-block before:-rotate-[40deg] before:-translate-y-0.5 before:-translate-x-1 ml-1.5
+    }
+    .item_planos{
+        @apply flex items-center gap-4 text-lg
+    }
+    .titulo_planos{
+        @apply text-center bg-madeira text-amber-100 p-4 text-2xl tracking-wider rounded-tr-md rounded-tl-md font-bold text-shadow-sm text-shadow-black
+    }
+    .reveal{
+        @apply opacity-0 translate-y-12 duration-800
+    }
+    .reveal.in{
+        @apply opacity-100 translate-y-0
+    }
+    .section{
+       @apply scroll-mt-40 md:scroll-mt-48
+    }
+    .btnWhats{
+        @apply fixed bottom-3 w-10 h-10 flex justify-center items-center right-2 md:right-5 text-3xl p-6 bg-green-500 rounded-full  duration-400  hover:scale-125 hover:bg-green-600
+    } 
+    .overlay{
+        @apply fixed inset-0 bg-black/40 backdrop-blur-sm opacity-0 invisible transition-all duration-400
+    }
+    .section-padrao{
+        @apply max-w-[1600px] mx-auto  mt-16 p-6 flex flex-col gap-4  justify-center lg:items-start
+    }
+    .estrelas{
+        @apply text-xs opacity-50
+    }
+    .btnMenu{
+        @apply md:hidden text-3xl cursor-pointer
+    }
+}
