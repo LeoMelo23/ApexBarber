@@ -560,6 +560,9 @@
   .text-center {
     text-align: center;
   }
+  .font-\[\'\'\] {
+    font-family: '';
+  }
   .font-\[\'Cinzel\'\] {
     font-family: 'Cinzel';
   }
@@ -919,8 +922,6 @@
     font-family: '';
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
-    --tw-font-weight: var(--font-weight-medium);
-    font-weight: var(--font-weight-medium);
     --tw-tracking: var(--tracking-widest);
     letter-spacing: var(--tracking-widest);
     color: var(--color-madeira);
