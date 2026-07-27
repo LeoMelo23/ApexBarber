@@ -16,7 +16,7 @@
         @apply text-madeira text-xl tracking-widest font-['Instrument_Serif'] text-shadow-sm text-shadow-black
     }
     .destaqueSpan{
-        @apply text-madeira uppercase text-4xl md:text-7xl text-shadow-sm text-shadow-black
+        @apply text-madeira uppercase text-[46px] md:text-7xl text-shadow-sm text-shadow-black
     }
     .subtitle_barbearia{
         @apply text-4xl lg:text-5xl font-['Cinzel'] tracking-wider text-madeira text-shadow-sm text-shadow-black font-medium mt-8
