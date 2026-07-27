@@ -13,7 +13,7 @@
         @apply font-bold py-4 px-10 rounded shadow-xs shadow-black/70 cursor-pointer duration-300 hover:scale-105 ease-in-out hover:translate-x-1 hover:-translate-y-1 bg-madeira uppercase block max-w-2xs text-center
     }
     .eyerBrow{
-        @apply text-madeira text-lg font-medium tracking-widest font-['Oswald']
+        @apply text-madeira text-lg font-medium  tracking-widest font-['']
     }
     .destaqueSpan{
         @apply text-madeira uppercase text-5xl md:text-7xl text-shadow-sm text-shadow-black
