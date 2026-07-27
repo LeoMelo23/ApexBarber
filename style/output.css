@@ -35,8 +35,6 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
-    --text-6xl: 3.75rem;
-    --text-6xl--line-height: 1;
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
     --font-weight-medium: 500;
@@ -560,9 +558,6 @@
   .text-center {
     text-align: center;
   }
-  .font-\[\'\'\] {
-    font-family: '';
-  }
   .font-\[\'Cinzel\'\] {
     font-family: 'Cinzel';
   }
@@ -746,10 +741,6 @@
     .lg\:flex-col {
       flex-direction: column;
     }
-    .lg\:text-6xl {
-      font-size: var(--text-6xl);
-      line-height: var(--tw-leading, var(--text-6xl--line-height));
-    }
   }
   @media (width >= 80rem) {
     .xl\:mt-16 {
@@ -919,12 +910,17 @@
     }
   }
   .eyerBrow {
-    font-family: '';
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
+    font-family: 'Instrument Serif';
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
     --tw-tracking: var(--tracking-widest);
     letter-spacing: var(--tracking-widest);
     color: var(--color-madeira);
+    --tw-text-shadow-color: #000;
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-text-shadow-color: color-mix(in oklab, var(--color-black) var(--tw-text-shadow-alpha), transparent);
+    }
+    text-shadow: 0px 1px 0px var(--tw-text-shadow-color, rgb(0 0 0 / 0.075)), 0px 1px 1px var(--tw-text-shadow-color, rgb(0 0 0 / 0.075)), 0px 2px 2px var(--tw-text-shadow-color, rgb(0 0 0 / 0.075));
   }
   .destaqueSpan {
     font-size: var(--text-5xl);
@@ -962,9 +958,11 @@
     }
   }
   .servicos_barbeiro {
-    font-family: 'Manrope';
+    font-family: 'Instrument Serif';
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
     --tw-tracking: var(--tracking-wide);
     letter-spacing: var(--tracking-wide);
   }

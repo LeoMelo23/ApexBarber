@@ -13,7 +13,7 @@
         @apply font-bold py-4 px-10 rounded shadow-xs shadow-black/70 cursor-pointer duration-300 hover:scale-105 ease-in-out hover:translate-x-1 hover:-translate-y-1 bg-madeira uppercase block max-w-2xs text-center
     }
     .eyerBrow{
-        @apply text-madeira text-lg  tracking-widest font-['']
+        @apply text-madeira text-xl tracking-widest font-['Instrument_Serif'] text-shadow-sm text-shadow-black
     }
     .destaqueSpan{
         @apply text-madeira uppercase text-5xl md:text-7xl text-shadow-sm text-shadow-black
@@ -22,7 +22,7 @@
         @apply text-4xl lg:text-5xl font-['Cinzel'] tracking-wider text-madeira text-shadow-sm text-shadow-black font-medium mt-8
     }
     .servicos_barbeiro{
-        @apply text-2xl tracking-wide font-['Manrope']
+        @apply text-2xl tracking-wide font-medium font-['Instrument_Serif']
     }
     .positivo{
         @apply after:w-1 after:bg-madeira after:h-5 after:inline-block after:rotate-[45deg] before:w-1 before:bg-madeira before:h-2.5 before:inline-block before:-rotate-[40deg] before:-translate-y-0.5 before:-translate-x-1 ml-1.5
